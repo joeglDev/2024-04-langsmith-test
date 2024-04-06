@@ -1,0 +1,16 @@
+{
+  "name": "2024-04-langsmith-for-ollama-models",
+  "version": "1.0.0",
+  "description": "Tracing and evaluation for my ollama models",
+  "main": "index.js",
+  "author": "joegilbertdev",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "langchain": "^0.1.31",
+    "langsmith": "^0.1.14"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
+}
