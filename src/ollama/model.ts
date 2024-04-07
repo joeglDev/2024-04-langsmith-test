@@ -1,7 +1,8 @@
 import { Ollama } from "@langchain/community/llms/ollama";
+import { MODEL_NAME, MODEL_URL } from "./constants.js";
 
 export const ollamaModel = new Ollama({
-  baseUrl: "http://localhost:11434", // Default value
-  model: "orca-mini", 
+  baseUrl: MODEL_URL,
+  model: MODEL_NAME, 
 });
 
