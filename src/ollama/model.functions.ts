@@ -1,7 +1,7 @@
-import { ollamaModel } from "./model.js";
+import { Ollama } from "langchain/llms/ollama";
 
-export const getCompletion = async(prompt: string) => {
-    const stream = await ollamaModel.stream(prompt);
+export const getCompletion = async(prompt: string, client: Ollama) => {
+    const stream = await client.stream(prompt);
     const chunks = [];
     
     for await (const chunk of stream) {
